@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homes & Beyond - Property Listings</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f8f9fa; }
+    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    header h1 { margin-bottom: 5px; }
+    header p { font-size: 0.9rem; opacity: 0.8; }
+    .controls { max-width: 1000px; margin: 20px auto; padding: 0 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .controls input, .controls select { flex: 1; min-width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+    .properties-grid { max-width: 1000px; margin: 0 auto 40px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .property-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: relative; }
+    .property-card img { width: 100%; height: 200px; object-fit: cover; }
+    .ribbon { position: absolute; top: 10px; right: -30px; background: #e74c3c; color: white; padding: 5px 40px; transform: rotate(45deg); font-size: 0.8rem; font-weight: bold; }
+    .property-info { padding: 15px; }
+    .property-title { font-size: 1.2rem; color: #2c3e50; margin-bottom: 8px; }
+    .property-price { font-size: 1.5rem; color: #27ae60; font-weight: bold; margin-bottom: 8px; }
+    .property-location, .property-type { color: #7f8c8d; font-size: 0.9rem; margin-bottom: 4px; }
+    @media (max-width: 600px) { .properties-grid { grid-template-columns: 1fr; } .controls { flex-direction: column; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="src/main.js"></script>
+</body>
+</html>
