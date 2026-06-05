@@ -1,0 +1,12 @@
+{
+  "name": "fitness-scheduler",
+  "version": "1.0.0",
+  "description": "FlexCore Fitness Class Scheduler - Vue.js Exercise 04",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
